@@ -22,5 +22,10 @@ public class Strings {
         // replace
         String str1=a.replace("charlie", "world");
         System.out.println(str1);
+        // toString()
+        float number = 123;
+        String str = Float.toString(number);
+        float sx=Float.parseFloat(str);
+        System.out.println(sx);
     }
 }
