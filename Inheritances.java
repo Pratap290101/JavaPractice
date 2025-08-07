@@ -10,6 +10,7 @@ class ferrari extends Car{
     ferrari(){
         System.out.println(" from fer class car mileage = "+mileage+" car name = "+cname);
         System.out.println(" from fer class car mileage = "+super.mileage+" car name = "+cname);
+        super.mileage=25;
 
         showDetails();
         super.showDetails();

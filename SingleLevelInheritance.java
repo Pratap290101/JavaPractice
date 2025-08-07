@@ -1,21 +1,16 @@
 class Parent{
-    String name="Rajesh";
-    int age=45;
+    protected int x=12;
+    int y=30;
 }
-
-class Child{
-    String name="raj";
-    int age=15;
+class Child extends Parent{
     Child(){
-        System.out.println("My name is "+name+" and age is "+age+".");
-        System.out.println("My parent name is "+super.name+" and age is "+super. age+".");
-
+        int z=30,x=232;
+        System.out.println("x="+x+"y="+y+"z="+z);
+        System.out.println(super.x);
     }
-
 }
-
 public class SingleLevelInheritance {
     public static void main(String ar[]){
-
+        Child c=new Child();
     }
 }
